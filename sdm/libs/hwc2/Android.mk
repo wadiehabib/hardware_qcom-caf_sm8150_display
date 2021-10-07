@@ -13,7 +13,7 @@ LOCAL_C_INCLUDES              += $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 LOCAL_HEADER_LIBRARIES        := display_headers
 
-LOCAL_CFLAGS                  := -Wno-missing-field-initializers -Wno-unused-parameter \
+LOCAL_CFLAGS                  := -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unreachable-code-loop-increment \
                                  -fcolor-diagnostics\
                                  -DLOG_TAG=\"SDM\" $(common_flags)
 LOCAL_CLANG                   := true
